@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How X Investment Tracker handles Google Drive access and personal research data.">
+  <title>Privacy policy · X Investment Tracker</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f7f5f0; color: #242d29; font: 18px/1.65 system-ui, sans-serif; }
+    main { max-width: 700px; margin: auto; padding: 48px 24px; }
+    h1 { font: 500 clamp(2.3rem, 7vw, 3.5rem)/1.1 Georgia, serif; margin: 32px 0 16px; }
+    h2 { font-size: 1.15rem; margin-top: 32px; }
+    a { color: #245442; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #245442; outline-offset: 5px; }
+    .date { font-size: 15px; color: #53645b; }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html">X Investment Tracker</a>
+    <h1>Privacy policy</h1>
+    <p class="date">Updated 24 September 2026</p>
+    <p>X Investment Tracker is operated by its owner for personal research. This policy describes the tracker and its optional Google Drive connection.</p>
+    <h2>Data collected and used</h2>
+    <p>The tracker collects public X posts and associated source metadata, stores them on the owner's server, and generates market research briefs. If AI synthesis is enabled, selected public posts and source context are sent to OpenAI to generate a summary.</p>
+    <h2>Google Drive access</h2>
+    <p>The Drive connection uses Google's <code>drive.file</code> permission to create and update research briefs and access the file metadata needed to locate the destination and manage those uploads. This permission covers files created by the app or explicitly authorized for it, rather than general access to all Drive files.</p>
+    <p>The upload workflow does not use existing Drive document contents as input to AI synthesis. It does not sell Google user data, use it for advertising, or use it to train AI models.</p>
+    <h2>Storage and sharing</h2>
+    <p>OAuth credentials and refresh tokens are stored in a file accessible to the tracker owner's server account. They are used to maintain the authorized Drive connection. Generated briefs are stored locally and, when delivery is enabled, in the owner's Google Drive. The uploader does not create public sharing links.</p>
+    <p>Google processes uploaded files to provide Drive storage. If the owner separately connects Drive to ChatGPT or another service and authorizes access, that service's terms and privacy settings also apply. OpenAI processes the public-post inputs sent for optional AI synthesis under the owner's API account settings.</p>
+    <h2>Retention and control</h2>
+    <p>Collected posts are retained locally for 30 days after collection. Local reports and successful AI caches remain until the owner deletes them. The configured latest Drive briefs are replaced by subsequent uploads; Drive may retain file versions according to its own behavior.</p>
+    <p>The owner can disconnect the app at <a href="https://myaccount.google.com/connections">Google Account connections</a>, remove the saved credentials from the server, and delete local or Drive reports. Revoking access stops future authorized uploads but does not delete previously stored files. To remove Drive files permanently, also empty them from Drive's trash.</p>
+    <h2>This website</h2>
+    <p>These informational pages contain no application analytics, tracking scripts, or sign-in forms. GitHub Pages hosts the website and may process technical request data under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+    <h2>Contact</h2>
+    <p>For questions about this app, use the support email shown on its Google authorization screen. The maintainer's profile is <a href="https://github.com/jharlas">github.com/jharlas</a>.</p>
+  </main>
+</body>
+</html>
